@@ -17,6 +17,7 @@ const FormInput = (props) => {
 				pattern={input.pattern}
 				onBlur={() => setFocused(true)} // click and leave
 				onFocus={() => input.name === 'confirmPassword' && setFocused(true)} // click
+				// custom attrs
 				focused={focused.toString()}
 			/>
 			<span>{input.errormessage}</span>
